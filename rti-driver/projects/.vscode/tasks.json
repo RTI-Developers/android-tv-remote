@@ -1,0 +1,179 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build - All (dev)",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": [
+				"Build - Configuration Host (dev)",
+				"Build - Driver"
+			]
+		},
+		{
+			"label": "Build - All (prod)",
+			"group": "build",
+			"dependsOn": [
+				"Build - Configuration Host (prod)",
+				"Uglify - Driver"
+			],
+			"dependsOrder": "sequence"
+		},
+		{
+            "label": "Build - Configuration Host (dev)",
+            "type": "shell",
+			"group": "build",
+            "command": "npm run build",
+			"options": {
+				"cwd": "./configuration-host" 
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        },
+		{
+            "label": "Build - Configuration Host (prod)",
+            "type": "shell",
+			"group": "build",
+            "command": "npm run publish",
+			"options": {
+				"cwd": "./configuration-host" 
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        },
+		{
+            "label": "Build - Driver",
+            "type": "typescript",
+			"group": "build",
+            "tsconfig": "./driver/tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        },
+		{
+            "label": "FileCopy - Driver",
+            "type": "shell",
+			"group": "build",
+            "command": "npm run fileCopy",
+			"options": {
+				"cwd": "./driver" 
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        },
+		{
+			"label": "Install Dependencies - All",
+			"group": "build",
+			"dependsOn": [
+				"Install Dependencies - Configuration Host",
+				"Install Dependencies - Driver"
+			]
+		},
+		{
+			"label": "Install Dependencies - Configuration Host",
+			"type": "shell",
+			"group": "build",
+			"command": "npm install",
+			"options": {
+				"cwd": "./configuration-host" 
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+		},
+		{
+			"label": "Install Dependencies - Driver",
+			"type": "shell",
+			"group": "build",
+			"dependsOn": [
+				"Install Dependencies - Driver - dotnet-t4",
+				"Install Dependencies - Driver - npm"
+			]
+		},
+		{
+            "label": "Install Dependencies - Driver - dotnet-t4",
+            "type": "shell",
+            "command": "dotnet tool install --global dotnet-t4 --version 3.0.0",
+        },
+        {
+            "label": "Install Dependencies - Driver - npm",
+            "type": "shell",
+            "command": "npm install",
+			"options": {
+				"cwd": "./driver" 
+			}
+        },
+		{
+            "label": "Package Driver",
+            "type": "shell",
+			"command": "../tools/PackageDriver.exe",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+            "options": {
+                "cwd": "../dist"
+            },
+            "problemMatcher": [],
+			"dependsOn": [
+				"Build - All (prod)",
+				"FileCopy - Driver"
+			],
+			"dependsOrder": "sequence",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "dedicated"
+			}
+        },
+		{
+            "label": "Uglify - Driver",
+            "type": "shell",
+			"command": "npm run uglify",
+            "options": {
+                "cwd": "./driver"
+            },
+            "problemMatcher": [],
+			"dependsOn": [
+				"Build - Driver"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        },
+		{
+            "label": "Start - Configuration Host (dev)",
+            "type": "shell",
+			"group": "build",
+            "command": "npm run start",
+			"options": {
+				"cwd": "./configuration-host" 
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared",
+			}
+        }
+	]
+}

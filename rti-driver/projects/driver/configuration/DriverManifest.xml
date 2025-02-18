@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<driverManifest>
+	<driver
+		id="{9c036498-4493-4634-80ef-4b7f6c53320b}"
+
+		name="Android TV"
+		author="Noesis Labs LLC"
+		copyright="Copyright 2018 Noesis Labs LLC"
+		deviceManufacturer=""
+		deviceModel=""
+		driverVersion="1.1"
+		
+		minimumRuntimeVersion="20"		
+		minimumSoftwareVersion="9.9"
+		minimumApexVersion="10.0"
+
+		processorType="XP-8"
+
+		configSettingsStream="ConfigSettings.xml"
+		systemVariablesStream="SystemVariables.xml"
+		systemFunctionsStream="SystemFunctions.xml"
+		helpTextStream="instructions.rtf"
+		deviceDescriptionStream="DeviceDescription.xml">
+		<processorScript stream="driver.js" />
+
+		<package>
+			<output filename="androidtvremote" public="true" />
+			<include filename="driver.js"/>
+			<include filename="ConfigSettings.xml"/>
+			<include filename="DriverManifest.xml"/>
+			<include filename="instructions.rtf"/>
+			<include filename="DeviceDescription.xml"/>
+			<include filename="SystemFunctions.xml"/>
+			<include filename="SystemVariables.xml"/>
+			<description>
+				This driver allows IP control of Android TV devices by communicating with the Android TV Remote Service.
+			</description>
+		</package>
+
+		<resource stream="favicon.ico" />
+		<resource stream="index.html" />
+		<resource stream="main.js" />
+		<resource stream="polyfills.js" />
+		<resource stream="runtime.js" />
+		<resource stream="styles.css" />
+	</driver>
+</driverManifest>

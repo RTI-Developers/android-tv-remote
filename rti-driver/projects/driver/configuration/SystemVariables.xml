@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<variables>
+    <category name="Device 1 (%%AndroidTvName1%%) State" sourceid="Device1" condition="$DeviceCount >= 1">
+        <variable name="Connected" sysvar="Connected1" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected1" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing1" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing1" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState1" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 1 (%%AndroidTvName1%%) Metadata" sourceid="Device1" condition="$DeviceCount >= 1">
+		<variable name="Album" sysvar="MediaAlbum1" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp1" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist1" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover1" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration1" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed1" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError1" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage1" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState1" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress1" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle1" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 2 (%%AndroidTvName2%%) State" sourceid="Device2" condition="$DeviceCount >= 2">
+        <variable name="Connected" sysvar="Connected2" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected2" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing2" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing2" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState2" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 2 (%%AndroidTvName2%%) Metadata" sourceid="Device2" condition="$DeviceCount >= 2">
+		<variable name="Album" sysvar="MediaAlbum2" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp2" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist2" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover2" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration2" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed2" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError2" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage2" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState2" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress2" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle2" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 3 (%%AndroidTvName3%%) State" sourceid="Device3" condition="$DeviceCount >= 3">
+        <variable name="Connected" sysvar="Connected3" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected3" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing3" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing3" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState3" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 3 (%%AndroidTvName3%%) Metadata" sourceid="Device3" condition="$DeviceCount >= 3">
+		<variable name="Album" sysvar="MediaAlbum3" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp3" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist3" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover3" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration3" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed3" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError3" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage3" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState3" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress3" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle3" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 4 (%%AndroidTvName4%%) State" sourceid="Device4" condition="$DeviceCount >= 4">
+        <variable name="Connected" sysvar="Connected4" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected4" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing4" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing4" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState4" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 4 (%%AndroidTvName4%%) Metadata" sourceid="Device4" condition="$DeviceCount >= 4">
+		<variable name="Album" sysvar="MediaAlbum4" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp4" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist4" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover4" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration4" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed4" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError4" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage4" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState4" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress4" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle4" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 5 (%%AndroidTvName5%%) State" sourceid="Device5" condition="$DeviceCount >= 5">
+        <variable name="Connected" sysvar="Connected5" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected5" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing5" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing5" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState5" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 5 (%%AndroidTvName5%%) Metadata" sourceid="Device5" condition="$DeviceCount >= 5">
+		<variable name="Album" sysvar="MediaAlbum5" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp5" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist5" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover5" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration5" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed5" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError5" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage5" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState5" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress5" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle5" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 6 (%%AndroidTvName6%%) State" sourceid="Device6" condition="$DeviceCount >= 6">
+        <variable name="Connected" sysvar="Connected6" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected6" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing6" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing6" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState6" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 6 (%%AndroidTvName6%%) Metadata" sourceid="Device6" condition="$DeviceCount >= 6">
+		<variable name="Album" sysvar="MediaAlbum6" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp6" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist6" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover6" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration6" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed6" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError6" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage6" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState6" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress6" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle6" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 7 (%%AndroidTvName7%%) State" sourceid="Device7" condition="$DeviceCount >= 7">
+        <variable name="Connected" sysvar="Connected7" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected7" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing7" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing7" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState7" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 7 (%%AndroidTvName7%%) Metadata" sourceid="Device7" condition="$DeviceCount >= 7">
+		<variable name="Album" sysvar="MediaAlbum7" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp7" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist7" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover7" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration7" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed7" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError7" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage7" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState7" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress7" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle7" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 8 (%%AndroidTvName8%%) State" sourceid="Device8" condition="$DeviceCount >= 8">
+        <variable name="Connected" sysvar="Connected8" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected8" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing8" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing8" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState8" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 8 (%%AndroidTvName8%%) Metadata" sourceid="Device8" condition="$DeviceCount >= 8">
+		<variable name="Album" sysvar="MediaAlbum8" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp8" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist8" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover8" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration8" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed8" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError8" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage8" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState8" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress8" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle8" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 9 (%%AndroidTvName9%%) State" sourceid="Device9" condition="$DeviceCount >= 9">
+        <variable name="Connected" sysvar="Connected9" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected9" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing9" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing9" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState9" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 9 (%%AndroidTvName9%%) Metadata" sourceid="Device9" condition="$DeviceCount >= 9">
+		<variable name="Album" sysvar="MediaAlbum9" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp9" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist9" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover9" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration9" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed9" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError9" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage9" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState9" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress9" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle9" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+    <category name="Device 10 (%%AndroidTvName10%%) State" sourceid="Device10" condition="$DeviceCount >= 10">
+        <variable name="Connected" sysvar="Connected10" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected10" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing10" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing10" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState10" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device 10 (%%AndroidTvName10%%) Metadata" sourceid="Device10" condition="$DeviceCount >= 10">
+		<variable name="Album" sysvar="MediaAlbum10" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp10" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist10" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover10" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration10" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed10" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError10" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage10" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState10" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress10" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle10" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+</variables>

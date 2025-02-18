@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div *ngIf="device" class="card border-primary mb-3">
+            <h5 class="card-header">{{ device!.name}}<span class="badge badge-pill badge-secondary float-right">{{ stateText }}</span></h5>
+            <div class="card-body">
+                <div class="spinner-border" role="status" *ngIf="isProcessing">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <button class="btn btn-primary mb-3" *ngIf="showInitiatePairing" (click)="initiatePairing()">{{ pairingText }}</button>
+                <div *ngIf="showSendAnswer" class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">PIN</span>
+                    </div>
+                    <input #answer class="form-control" type="text" minlength="4" maxlength="6">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" (click)="sendAnswer(answer.value); answer.value='';">Send</button>
+                    </div>
+                </div>
+                <div *ngIf="showCompanionAppOptions" class="mb-3">
+                    <div><button class="btn btn-primary mb-3" (click)="installCompanionApp()">Install Companion App</button></div>
+                    <div><button class="btn btn-primary mb-3" (click)="configureCompanionApp()">Configure Companion App</button></div>
+                </div>
+                <div *ngIf="showConnectionFailedMessage" class="mb-3">
+                    <p>Device connection failed, please ensure device is powered on and confirm IP Address / Hostname is correct.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

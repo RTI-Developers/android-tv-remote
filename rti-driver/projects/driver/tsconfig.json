@@ -1,0 +1,29 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "rootDir": ".",
+        "target": "es3",
+        "allowJs": true,
+        "outFile": "../../dist/driver.js",
+        "lib": ["es5"],
+        "module": "none",
+        "strictNullChecks": true
+    },
+    "files": [
+        "./src/resources/json2.js",
+        "./src/resources/forge.js",
+        "./src/persistenceHelpers.ts",
+        "./src/protobufUtil.ts",
+        "./src/Logger.ts",
+        "./src/GlobalHandlerMap.ts",
+        "./src/ConfigurationHost.ts",
+        "./src/MediaNotificationHost.ts",
+        "./src/ControlConnection.ts",
+        "./src/PairingConnection.ts",
+        "./src/ServerCertConnection.ts",
+        "./src/index.ts"
+    ],
+    "include": [
+        "./src/typings/*.d.ts"
+    ]
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<functions>
+	<category name="Device Commands" >
+		<function name="Send Key" export="SendKey" repeatrate="20">
+			<parameter name="Key" type="mcinteger">
+				<choice name="UNKNOWN" value="0"/>
+				<choice name="SOFT_LEFT" value="1"/>
+				<choice name="SOFT_RIGHT" value="2"/>
+				<choice name="HOME" value="3" buttontag="Menu"/>
+				<choice name="BACK" value="4" buttontag="Back,Exit"/>
+				<choice name="CALL" value="5" />
+				<choice name="0" value="7" buttontag="0" />
+				<choice name="1" value="8" buttontag="1" />
+				<choice name="2" value="9" buttontag="2" />
+				<choice name="3" value="10" buttontag="3" />
+				<choice name="4" value="11" buttontag="4" />
+				<choice name="5" value="12" buttontag="5" />
+				<choice name="6" value="13" buttontag="6" />
+				<choice name="7" value="14" buttontag="7" />
+				<choice name="8" value="15" buttontag="8" />
+				<choice name="9" value="16" buttontag="9" />
+				<choice name="STAR" value="17" />
+				<choice name="POUND" value="18" />
+				<choice name="DPAD_UP" value="19" buttontag="Up"/>
+				<choice name="DPAD_DOWN" value="20" buttontag="Down"/>
+				<choice name="DPAD_LEFT" value="21" buttontag="Left"/>
+				<choice name="DPAD_RIGHT" value="22" buttontag="Right"/>
+				<choice name="DPAD_CENTER" value="23" buttontag="OK"/>
+				<choice name="VOLUME_UP" value="24" />
+				<choice name="VOLUME_DOWN" value="25" />
+				<choice name="POWER" value="26" />
+				<choice name="CAMERA" value="27" />
+				<choice name="A" value="29" />
+				<choice name="B" value="30" />
+				<choice name="C" value="31" />
+				<choice name="D" value="32" />
+				<choice name="E" value="33" />
+				<choice name="F" value="34" />
+				<choice name="G" value="35" />
+				<choice name="H" value="36" />
+				<choice name="I" value="37" />
+				<choice name="J" value="38" />
+				<choice name="K" value="39" />
+				<choice name="L" value="40" />
+				<choice name="M" value="41" />
+				<choice name="N" value="42" />
+				<choice name="O" value="43" />
+				<choice name="P" value="44" />
+				<choice name="Q" value="45" />
+				<choice name="R" value="46" />
+				<choice name="S" value="47" />
+				<choice name="T" value="48" />
+				<choice name="U" value="49" />
+				<choice name="V" value="50" />
+				<choice name="W" value="51" />
+				<choice name="X" value="52" />
+				<choice name="Y" value="53" />
+				<choice name="Z" value="54" />
+				<choice name="COMMA" value="55" />
+				<choice name="PERIOD" value="56" />
+				<choice name="ALT_LEFT" value="57" />
+				<choice name="ALT_RIGHT" value="58" />
+				<choice name="SHIFT_LEFT" value="59" />
+				<choice name="SHIFT_RIGHT" value="60" />
+				<choice name="TAB" value="61" />
+				<choice name="SPACE" value="62" />
+				<choice name="EXPLORER" value="64" />
+				<choice name="ENTER" value="66" buttontag="Enter" />
+				<choice name="DEL" value="67" />
+				<choice name="GRAVE" value="68" />
+				<choice name="MINUS" value="69" />
+				<choice name="EQUALS" value="70" />
+				<choice name="LEFT_BRACKET" value="71" />
+				<choice name="RIGHT_BRACKET" value="72" />
+				<choice name="BACKSLASH" value="73" />
+				<choice name="SEMICOLON" value="74" />
+				<choice name="APOSTROPHE" value="75" />
+				<choice name="SLASH" value="76" />
+				<choice name="AT" value="77" />
+				<choice name="FOCUS" value="80" />
+				<choice name="PLUS" value="81" />
+				<choice name="MENU" value="82"/>
+				<choice name="SEARCH" value="84" />
+				<choice name="MEDIA_PLAY_PAUSE" value="85" buttontag="Pause"/>
+				<choice name="MEDIA_STOP" value="86" buttontag="Stop" />
+				<choice name="MEDIA_NEXT" value="87" />
+				<choice name="MEDIA_PREVIOUS" value="88" buttontag="Prev" />
+				<choice name="MEDIA_REWIND" value="89" buttontag="Scan Back"/>
+				<choice name="MEDIA_FAST_FORWARD" value="90" buttontag="Scan Forward"/>
+				<choice name="MUTE" value="91" />
+				<choice name="CTRL_LEFT" value="92" />
+				<choice name="CTRL_RIGHT" value="93" />
+				<choice name="INSERT" value="94" />
+				<choice name="PAUSE" value="95"/>
+				<choice name="PAGE_UP" value="96" />
+				<choice name="PAGE_DOWN" value="97" />
+				<choice name="PRINT_SCREEN" value="98" />
+				<choice name="INFO" value="103" buttontag="Info"/>
+				<choice name="WINDOW" value="104" />
+				<choice name="BOOKMARK" value="110" />
+				<choice name="CAPS_LOCK" value="111" />
+				<choice name="ESCAPE" value="112" />
+				<choice name="META_LEFT" value="113" />
+				<choice name="META_RIGHT" value="114" />
+				<choice name="ZOOM_IN" value="115" />
+				<choice name="ZOOM_OUT" value="116" />
+				<choice name="CHANNEL_UP" value="117" buttontag="Channel Up" />
+				<choice name="CHANNEL_DOWN" value="118" buttontag="Channel Down" />
+				<choice name="LIVE" value="120" />
+				<choice name="DVR" value="121" />
+				<choice name="GUIDE" value="122" buttontag="Guide"/>
+				<choice name="MEDIA_SKIP_BACK" value="123" buttontag="Skip Back"/>
+				<choice name="MEDIA_SKIP_FORWARD" value="124" buttontag="Skip Forward"/>
+				<choice name="MEDIA_RECORD" value="125" buttontag="Record" />
+				<choice name="MEDIA_PLAY" value="126" buttontag="Play"/>
+				<choice name="PROG_RED" value="128" />
+				<choice name="PROG_GREEN" value="129" />
+				<choice name="PROG_YELLOW" value="130" />
+				<choice name="PROG_BLUE" value="131" />
+				<choice name="BD_POWER" value="132" />
+				<choice name="BD_INPUT" value="133" />
+				<choice name="STB_POWER" value="134" />
+				<choice name="STB_INPUT" value="135" />
+				<choice name="STB_MENU" value="136" />
+				<choice name="TV_POWER" value="137" />
+				<choice name="TV_INPUT" value="138" />
+				<choice name="AVR_POWER" value="139" />
+				<choice name="AVR_INPUT" value="140" />
+				<choice name="AUDIO" value="141" />
+				<choice name="EJECT" value="142" />
+				<choice name="BD_POPUP_MENU" value="143" />
+				<choice name="BD_TOP_MENU" value="144" />
+				<choice name="SETTINGS" value="145" />
+				<choice name="SETUP" value="146" />
+				<choice name="BTN_FIRST" value="256" />
+				<choice name="BTN_MISC" value="256" />
+				<choice name="BTN_0" value="256" />
+				<choice name="BTN_1" value="257" />
+				<choice name="BTN_2" value="258" />
+				<choice name="BTN_3" value="259" />
+				<choice name="BTN_4" value="260" />
+				<choice name="BTN_5" value="261" />
+				<choice name="BTN_6" value="262" />
+				<choice name="BTN_7" value="263" />
+				<choice name="BTN_8" value="264" />
+				<choice name="BTN_9" value="265" />
+				<choice name="BTN_MOUSE" value="272" />
+				<choice name="BTN_LEFT" value="272" />
+				<choice name="BTN_RIGHT" value="273" />
+				<choice name="BTN_MIDDLE" value="274" />
+				<choice name="BTN_SIDE" value="275" />
+				<choice name="BTN_EXTRA" value="276" />
+				<choice name="BTN_FORWARD" value="277" />
+				<choice name="BTN_BACK" value="278" />
+				<choice name="BTN_TASK" value="279" />
+			</parameter>
+			<parameter name="Device" type="mcinteger">
+				<choice name="Android TV 1 (%%AndroidTvName1%%)" value="1" sourceid="Device1" condition="$DeviceCount >= 1"/>
+				<choice name="Android TV 2 (%%AndroidTvName2%%)" value="2" sourceid="Device2" condition="$DeviceCount >= 2"/>
+				<choice name="Android TV 3 (%%AndroidTvName3%%)" value="3" sourceid="Device3" condition="$DeviceCount >= 3"/>
+				<choice name="Android TV 4 (%%AndroidTvName4%%)" value="4" sourceid="Device4" condition="$DeviceCount >= 4"/>
+				<choice name="Android TV 5 (%%AndroidTvName5%%)" value="5" sourceid="Device5" condition="$DeviceCount >= 5"/>
+				<choice name="Android TV 6 (%%AndroidTvName6%%)" value="6" sourceid="Device6" condition="$DeviceCount >= 6"/>
+				<choice name="Android TV 7 (%%AndroidTvName7%%)" value="7" sourceid="Device7" condition="$DeviceCount >= 7"/>
+				<choice name="Android TV 8 (%%AndroidTvName8%%)" value="8" sourceid="Device8" condition="$DeviceCount >= 8"/>
+				<choice name="Android TV 9 (%%AndroidTvName9%%)" value="9" sourceid="Device9" condition="$DeviceCount >= 9"/>
+				<choice name="Android TV 10 (%%AndroidTvName10%%)" value="10" sourceid="Device10" condition="$DeviceCount >= 10"/>
+			</parameter>
+		</function>
+		<function name="Send Intent" export="SendIntent" repeatrate="0">
+			<parameter name="IntentUri" type="string"/>
+			<parameter name="Device" type="mcinteger">
+				<choice name="Android TV 1 (%%AndroidTvName1%%)" value="1" sourceid="Device1" condition="$DeviceCount >= 1"/>
+				<choice name="Android TV 2 (%%AndroidTvName2%%)" value="2" sourceid="Device2" condition="$DeviceCount >= 2"/>
+				<choice name="Android TV 3 (%%AndroidTvName3%%)" value="3" sourceid="Device3" condition="$DeviceCount >= 3"/>
+				<choice name="Android TV 4 (%%AndroidTvName4%%)" value="4" sourceid="Device4" condition="$DeviceCount >= 4"/>
+				<choice name="Android TV 5 (%%AndroidTvName5%%)" value="5" sourceid="Device5" condition="$DeviceCount >= 5"/>
+				<choice name="Android TV 6 (%%AndroidTvName6%%)" value="6" sourceid="Device6" condition="$DeviceCount >= 6"/>
+				<choice name="Android TV 7 (%%AndroidTvName7%%)" value="7" sourceid="Device7" condition="$DeviceCount >= 7"/>
+				<choice name="Android TV 8 (%%AndroidTvName8%%)" value="8" sourceid="Device8" condition="$DeviceCount >= 8"/>
+				<choice name="Android TV 9 (%%AndroidTvName9%%)" value="9" sourceid="Device9" condition="$DeviceCount >= 9"/>
+				<choice name="Android TV 10 (%%AndroidTvName10%%)" value="10" sourceid="Device10" condition="$DeviceCount >= 10"/>
+			</parameter>
+		</function>
+	</category>
+</functions>

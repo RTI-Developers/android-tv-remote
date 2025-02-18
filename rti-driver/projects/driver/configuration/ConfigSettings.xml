@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<category name="General Settings">
+		<setting type="mcinteger" name="Device Count" variable="DeviceCount" default="1" description="Number of devices" countsourceid="Device">
+			<choice name="1" value="1"/>
+			<choice name="2" value="2"/>
+			<choice name="3" value="3"/>
+			<choice name="4" value="4"/>
+			<choice name="5" value="5"/>
+			<choice name="6" value="6"/>
+			<choice name="7" value="7"/>
+			<choice name="8" value="8"/>
+			<choice name="9" value="9"/>
+			<choice name="10" value="10"/>
+		</setting>
+	</category>
+	<category name="Device Names">
+		<setting name="Android TV 1 Name" type="string" variable="AndroidTvName1" default="Android TV 1" description="Name for Android TV 1" condition="$DeviceCount >= 1"/>
+		<setting name="Android TV 2 Name" type="string" variable="AndroidTvName2" default="Android TV 2" description="Name for Android TV 2" condition="$DeviceCount >= 2"/>
+		<setting name="Android TV 3 Name" type="string" variable="AndroidTvName3" default="Android TV 3" description="Name for Android TV 3" condition="$DeviceCount >= 3"/>
+		<setting name="Android TV 4 Name" type="string" variable="AndroidTvName4" default="Android TV 4" description="Name for Android TV 4" condition="$DeviceCount >= 4"/>
+		<setting name="Android TV 5 Name" type="string" variable="AndroidTvName5" default="Android TV 5" description="Name for Android TV 5" condition="$DeviceCount >= 5"/>
+		<setting name="Android TV 6 Name" type="string" variable="AndroidTvName6" default="Android TV 6" description="Name for Android TV 6" condition="$DeviceCount >= 6"/>
+		<setting name="Android TV 7 Name" type="string" variable="AndroidTvName7" default="Android TV 7" description="Name for Android TV 7" condition="$DeviceCount >= 7"/>
+		<setting name="Android TV 8 Name" type="string" variable="AndroidTvName8" default="Android TV 8" description="Name for Android TV 8" condition="$DeviceCount >= 8"/>
+		<setting name="Android TV 9 Name" type="string" variable="AndroidTvName9" default="Android TV 9" description="Name for Android TV 9" condition="$DeviceCount >= 9"/>
+		<setting name="Android TV 10 Name" type="string" variable="AndroidTvName10" default="Android TV 10" description="Name for Android TV 10" condition="$DeviceCount >= 10"/>
+	</category>
+	<category name="Device Networking">
+		<setting type="string" name="Android TV 1 IP Address" variable="IPAddress1" default="0.0.0.1" description="The IP Address Android TV 1" condition="$DeviceCount >= 1"/>
+		<setting type="string" name="Android TV 2 IP Address" variable="IPAddress2" default="0.0.0.1" description="The IP Address Android TV 2" condition="$DeviceCount >= 2"/>
+		<setting type="string" name="Android TV 3 IP Address" variable="IPAddress3" default="0.0.0.1" description="The IP Address Android TV 3" condition="$DeviceCount >= 3"/>
+		<setting type="string" name="Android TV 4 IP Address" variable="IPAddress4" default="0.0.0.1" description="The IP Address Android TV 4" condition="$DeviceCount >= 4"/>
+		<setting type="string" name="Android TV 5 IP Address" variable="IPAddress5" default="0.0.0.1" description="The IP Address Android TV 5" condition="$DeviceCount >= 5"/>
+		<setting type="string" name="Android TV 6 IP Address" variable="IPAddress6" default="0.0.0.1" description="The IP Address Android TV 6" condition="$DeviceCount >= 6"/>
+		<setting type="string" name="Android TV 7 IP Address" variable="IPAddress7" default="0.0.0.1" description="The IP Address Android TV 7" condition="$DeviceCount >= 7"/>
+		<setting type="string" name="Android TV 8 IP Address" variable="IPAddress8" default="0.0.0.1" description="The IP Address Android TV 8" condition="$DeviceCount >= 8"/>
+		<setting type="string" name="Android TV 9 IP Address" variable="IPAddress9" default="0.0.0.1" description="The IP Address Android TV 9" condition="$DeviceCount >= 9"/>
+		<setting type="string" name="Android TV 10 IP Address" variable="IPAddress10" default="0.0.0.1" description="The IP Address Android TV 10" condition="$DeviceCount >= 10"/>
+	</category>
+<category name="Device Companion App (2-way Communication)">
+		<setting type="boolean" name="Android TV 1 Uses Companion App" variable="UseCompanionApp1" default="0" description="Use companion app with Android TV 1" condition="$DeviceCount >= 1"/>
+		<setting type="boolean" name="Android TV 2 Uses Companion App" variable="UseCompanionApp2" default="0" description="Use companion app with Android TV 2" condition="$DeviceCount >= 2"/>
+		<setting type="boolean" name="Android TV 3 Uses Companion App" variable="UseCompanionApp3" default="0" description="Use companion app with Android TV 3" condition="$DeviceCount >= 3"/>
+		<setting type="boolean" name="Android TV 4 Uses Companion App" variable="UseCompanionApp4" default="0" description="Use companion app with Android TV 4" condition="$DeviceCount >= 4"/>
+		<setting type="boolean" name="Android TV 5 Uses Companion App" variable="UseCompanionApp5" default="0" description="Use companion app with Android TV 5" condition="$DeviceCount >= 5"/>
+		<setting type="boolean" name="Android TV 6 Uses Companion App" variable="UseCompanionApp6" default="0" description="Use companion app with Android TV 6" condition="$DeviceCount >= 6"/>
+		<setting type="boolean" name="Android TV 7 Uses Companion App" variable="UseCompanionApp7" default="0" description="Use companion app with Android TV 7" condition="$DeviceCount >= 7"/>
+		<setting type="boolean" name="Android TV 8 Uses Companion App" variable="UseCompanionApp8" default="0" description="Use companion app with Android TV 8" condition="$DeviceCount >= 8"/>
+		<setting type="boolean" name="Android TV 9 Uses Companion App" variable="UseCompanionApp9" default="0" description="Use companion app with Android TV 9" condition="$DeviceCount >= 9"/>
+		<setting type="boolean" name="Android TV 10 Uses Companion App" variable="UseCompanionApp10" default="0" description="Use companion app with Android TV 10" condition="$DeviceCount >= 10"/>
+	</category>
+	<category name="Media Data Interface">
+		<setting type="integer" name="Media Data Interface HTTP Port" variable="MediaNotificationInterfacePort" default="8081" description="Port on which to host HTTP media data interface" />
+	</category>
+	<category name="Configuration Interface">
+		<setting type="boolean" name="Enable Configuration Interface" variable="EnablePairing" description="Enable the HTTP configuration inteface" />
+		<setting type="integer" name="Configuration Interface HTTP Port" variable="PairingInterfacePort" default="8080" description="Port on which to host HTTP configuration interface" condition="$EnablePairing" />
+	</category>
+
+	<category name="Debug Settings" description="Driver debug options" hidden="true">
+		<setting type="boolean" name="Enable Trace" variable="EnableTrace" description="Enable verbose debug output" />
+	</category>
+
+</configuration>

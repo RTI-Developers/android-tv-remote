@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<device>
+  <sources>
+    <source maxitems="10" sourceid="Device" name="Device">
+      <templates>
+        <template name="Media Player - Simple"/>
+      </templates>
+    </source>
+  </sources>
+</device>

@@ -1,0 +1,18 @@
+{
+  "name": "rti_android_tv_driver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "^3.7.2",
+    "uglify-js": "^3.7.0"
+  },
+  "scripts": {
+    "fileCopy": "copyfiles -u 1 \"configuration/*\" \"documentation/*\" \"resources/*\" ../../dist",
+    "uglify": "uglifyjs \"../../dist/driver.js\" --compress --mangle --output \"../../dist/driver.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

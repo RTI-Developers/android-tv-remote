@@ -1,0 +1,59 @@
+<#@ output extension=".xml" #>
+<#@ include file="Variables.t4" #>
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<category name="General Settings">
+		<setting type="mcinteger" name="Device Count" variable="DeviceCount" default="1" description="Number of devices" countsourceid="Device">
+<#
+for (var i = 1; i <= deviceCount; i++)
+{
+#>
+			<choice name="<#= i #>" value="<#= i #>"/>
+<#
+}
+#>
+		</setting>
+	</category>
+	<category name="Device Names">
+<#
+for (var i = 1; i <= deviceCount; i++)
+{
+#>
+		<setting name="Android TV <#= i #> Name" type="string" variable="AndroidTvName<#= i #>" default="Android TV <#= i #>" description="Name for Android TV <#= i #>" condition="$DeviceCount >= <#= i #>"/>
+<#
+}
+#>
+	</category>
+	<category name="Device Networking">
+<#
+for (var i = 1; i <= deviceCount; i++)
+{
+#>
+		<setting type="string" name="Android TV <#= i #> IP Address" variable="IPAddress<#= i #>" default="0.0.0.1" description="The IP Address Android TV <#= i #>" condition="$DeviceCount >= <#= i #>"/>
+<#
+}
+#>
+	</category>
+<category name="Device Companion App (2-way Communication)">
+<#
+for (var i = 1; i <= deviceCount; i++)
+{
+#>
+		<setting type="boolean" name="Android TV <#= i #> Uses Companion App" variable="UseCompanionApp<#= i #>" default="0" description="Use companion app with Android TV <#= i #>" condition="$DeviceCount >= <#= i #>"/>
+<#
+}
+#>
+	</category>
+	<category name="Media Data Interface">
+		<setting type="integer" name="Media Data Interface HTTP Port" variable="MediaNotificationInterfacePort" default="8081" description="Port on which to host HTTP media data interface" />
+	</category>
+	<category name="Configuration Interface">
+		<setting type="boolean" name="Enable Configuration Interface" variable="EnablePairing" description="Enable the HTTP configuration inteface" />
+		<setting type="integer" name="Configuration Interface HTTP Port" variable="PairingInterfacePort" default="8080" description="Port on which to host HTTP configuration interface" condition="$EnablePairing" />
+	</category>
+
+	<category name="Debug Settings" description="Driver debug options" hidden="true">
+		<setting type="boolean" name="Enable Trace" variable="EnableTrace" description="Enable verbose debug output" />
+	</category>
+
+</configuration>

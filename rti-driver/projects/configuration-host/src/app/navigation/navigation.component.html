@@ -1,0 +1,12 @@
+<!-- Sidebar-->
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading"><a class="nav-link" [routerLink]="['/']">AndroidTV Devices</a></div>
+    <div class="list-group list-group-flush">
+      <a *ngFor="let device of devices; index as i;" [routerLink]="['/devices', device.index]" class="list-group-item list-group-item-action bg-light">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ device.name }}</h5>
+        </div>
+        <small>{{ device.ipAddress }}</small>        
+      </a>
+    </div>
+</div>

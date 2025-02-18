@@ -1,0 +1,32 @@
+<#@ output extension=".xml" #>
+<#@ include file="Variables.t4" #>
+<?xml version="1.0" encoding="utf-8"?>
+<variables>
+<#
+for (var i = 1; i <= deviceCount; i++)
+{
+#>
+    <category name="Device <#= i #> (%%AndroidTvName<#= i #>%%) State" sourceid="Device<#= i #>" condition="$DeviceCount >= <#= i #>">
+        <variable name="Connected" sysvar="Connected<#= i #>" type="boolean" sample="true" format="B:Disconnected:Connected" buttontag="Connected" />
+		<variable name="Disconnected" sysvar="Disconnected<#= i #>" type="boolean" sample="true" format="B:Connected:Disconnected" buttontag="Disconnected" />
+		<variable name="Pairing" sysvar="Pairing<#= i #>" type="boolean" sample="false" format="B:Not Pairing:Pairing" buttontag="Pairing" />
+		<variable name="Not Pairing" sysvar="NotPairing<#= i #>" type="boolean" sample="false" format="B:Pairing:Not Pairing" buttontag="Not Pairing" />
+		<variable name="Pairing State" sysvar="PairingState<#= i #>" type="integer" sample="0" format="L:0:Not Pairing:1:Connecting:2:Connected:3:Waiting for answer:4:Sending answer:5:Successful:6:Failed" buttontag="Pairing State" />
+	</category>
+    <category name="Device <#= i #> (%%AndroidTvName<#= i #>%%) Metadata" sourceid="Device<#= i #>" condition="$DeviceCount >= <#= i #>">
+		<variable name="Album" sysvar="MediaAlbum<#= i #>" type="string" sample="Purple Rain" buttontag="NP Album" />
+		<variable name="App" sysvar="MediaApp<#= i #>" type="string" sample="Plex" buttontag="App" />
+		<variable name="Artist" sysvar="MediaArtist<#= i #>" type="string" sample="Prince" buttontag="NP Artist" />
+		<variable name="Cover" sysvar="MediaCover<#= i #>" type="image" buttontag="NP Cover" />
+		<variable name="Duration" sysvar="MediaDuration<#= i #>" type="string" sample="5:14" buttontag="NP Duration" />
+		<variable name="Elapsed" sysvar="MediaElapsed<#= i #>" type="string" sample="3:11" buttontag="NP Elapsed" />
+		<variable name="Error" sysvar="MediaError<#= i #>" type="string" sample="" buttontag="Error" />
+		<variable name="Package" sysvar="MediaPackage<#= i #>" type="string" sample="com.plexapp.android" buttontag="Package" />
+		<variable name="Playback State" sysvar="MediaPlaybackState<#= i #>" type="integer" sample="0" format="L:0:None:1:Stopped:2:Paused:3:Playing:4:Fast Forwarding:5:Rewinding:6:Buffering:7:Error:8:Connecting:9:Skipping to Previous:10:Skipping to Next:11:Skipping to Queue Item" buttontag="Playback State" />
+		<variable name="Progress" sysvar="MediaProgress<#= i #>" type="integer" sample="50" buttontag="NP Progress" />
+		<variable name="Title" sysvar="MediaTitle<#= i #>" type="string" sample="When Doves Cry" buttontag="NP Title" />
+	</category>
+<#
+}
+#>
+</variables>

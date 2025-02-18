@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">RTI Android TV Companion</string>
+	<string name="app_description">This app listens for media metadata and playback changes and publishes them to the registered RTI processor.</string>
+	<string name="stop_service">Stop Service</string>
+</resources>

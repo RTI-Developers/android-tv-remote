@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+		"rootDir": ".",
+		"outDir": "../dist",
+    },
+	"files": [],
+	"references" : [
+		{ "path": "./driver" },
+		{ "path": "./configuration-host" }
+	]
+}
